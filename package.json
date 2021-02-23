@@ -1,19 +1,30 @@
 {
   "name": "discord-bot-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "An example of Discord bot powered by Discord.js",
   "main": "index.js",
+  "repository": "git@github.com:riccardobevilacqua/discord-bot-example.git",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
+    "dev": "nodemon .",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js",
+    "discordjs"
+  ],
+  "author": "Riccardo Bevilacqua <bevilacqua.riccardo@gmail.com>",
+  "license": "AGPL",
   "dependencies": {
-    "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0"
+    "discord.js": "12.5.1",
+    "dotenv": "8.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "2.0.7"
   }
 }
