@@ -5,8 +5,14 @@ Dotenv.config();
 
 const client = new Discord.Client();
 
-client.once('ready', () => {
-    console.log('Bot started.');
+const commandPrefix = '!ex';
+
+client.once('ready', () => console.log('Ready!'));
+
+client.on('message', message => {
+    if (message?.content === `${commandPrefix} hello there`) {
+        message.channel.send('General Kenobi');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
